@@ -69,18 +69,22 @@
 
 								 <head>
 									<style>
-										h3 {
+										.aboutme_h3 {
 											border: 1px solid rgb(211, 211, 211);
-											padding: 9px;
+											padding: 10px;
 											cursor: pointer;
-											background-color: transparent;
+											background-color:  #f9f9f9;
 											position: relative;
+											font-family: "Merriweather", Georgia, serif;
+											text-indent: 3px;
 										}
 										
-										h3::before {
+										.aboutme_h3::before {
 											content: "\25B2";
 											font-size: 10px;
 											position: absolute;
+											margin-top: 4px;
+											margin-left: 3px;
 											top: 15 px;
 											left: 0.29%;
 											transform: translateX(-50%) rotate(180deg);
@@ -88,6 +92,7 @@
 										
 										.answer {
 											display: none;
+										
 										}
 									</style>
 									<script>
@@ -107,24 +112,24 @@
 									<h2>Any Questions?</h2>
 									
 									<div>
-										<h3 onclick="showAnswer('answer1')">Why did you make this website?</h3>
+										<h3 class="aboutme_h3" onclick="showAnswer('answer1')">Why did you make this website?</h3>
 										<p class="answer" id="answer1">Firstly, I wanted to showcase my work and enthusiasm for the field of Data Science in an appealing and accessible way.
 												 Additionally, I saw this as an opportunity to expand my skill set by learning more about website design and creation. As a Data Scientist, 
 												 I believe that having these skills is increasingly important, especially as we work more closely with 
-												 cross-functional teams to build and deploy end-to-end Machine Learning products. </p>
+												 cross-functional teams to build and deploy end-to-end Machine Learning products. <br><br>
 
-												 <p>It's essential to understand the technical infrastructure necessary to 
+												 It's essential to understand the technical infrastructure necessary to 
 												 put a product into production. By gaining experience in website creation, I hope to 
 												 better understand these important considerations and become a more effective member of 
 												 cross-functional teams.</p>
 									</div>
 									
 									<div>
-										<h3 onclick="showAnswer('answer2')">How long have you been practicing Machine Leanring?</h3>
+										<h3 class="aboutme_h3" onclick="showAnswer('answer2')">How long have you been practicing Machine Leanring?</h3>
 										<p class="answer" id="answer2">I first became familiar with the term 'Machine Learning' during my 
 											undergraduate studies in 2020, which happened to be during the pandemic. Since then, I've been 
-											dedicated to learning as much as possible about the field.</p>
-											<p> I've utilized a variety of resources,
+											dedicated to learning as much as possible about the field.<br><br>
+											 I've utilized a variety of resources,
 											 including articles on Medium, research papers, and data science courses and books, to develop 
 											 my understanding of key concepts and techniques. Within my specialization in Data Science, I've 
 											 built models for a variety of use cases, such as recommendation systems, outlier detection, and 
@@ -133,29 +138,29 @@
 									</div>
 									
 									<div>
-										<h3 onclick="showAnswer('answer3')">Why are you interested in NLP/Machine Learning?</h3>
+										<h3 class="aboutme_h3" onclick="showAnswer('answer3')">Why are you interested in NLP/Machine Learning?</h3>
 										<p class="answer" id="answer3">Large language models (LLMs) are an incredibly exciting development 
 											in the field of natural language processing (NLP). These models are designed to understand 
 											the nuances of language in a way that was previously impossible, and they have the potential 
-											to transform the way we interact with machines. </p>
-										<p> At the same time, LLMs are just one part of the larger NLP landscape. NLP encompasses a 
+											to transform the way we interact with machines. <br><br>
+											At the same time, LLMs are just one part of the larger NLP landscape. NLP encompasses a 
 											wide range of techniques and approaches, from text classification and named entity recognition 
 											to machine translation and speech recognition. What makes NLP so fascinating is that it requires
-											 a deep understanding of human language, which is incredibly complex and context-dependent. </p>
-										<p> Overall, I'm really passionate about NLP because it's such an exciting and rapidly evolving field,
+											 a deep understanding of human language, which is incredibly complex and context-dependent. <br><br>
+											Overall, I'm really passionate about NLP because it's such an exciting and rapidly evolving field,
 											 and I believe that the insights and innovations that are emerging from this work have the potential
 											  to transform the way we communicate and interact with technology.</p>
 									</div>
 
 									<div>
-										<h3 onclick="showAnswer('answer4')">What kind of work do you see yourself doing?</h3>
+										<h3 class="aboutme_h3" onclick="showAnswer('answer4')">What kind of work do you see yourself doing?</h3>
 										<p class="answer" id="answer4"> I see myself working in a team where I can contribute my skills and knowledge
 											 to deliver end-to-end machine learning solutions that are integrated with existing production systems. 
 											 This would require a strong understanding of MLops, data engineering, machine learning, and statistics,
 											  as well as the ability to collaborate with cross-functional teams such as data scientists, software 
-											  engineers, and business stakeholders.</p>
+											  engineers, and business stakeholders.<br><br>
 										
-										<p> I am also very interested in building machine learning products that can help businesses and 
+											I am also very interested in building machine learning products that can help businesses and 
 											stakeholders understand how they can benefit from the predictions and insights generated by machine 
 											learning models. This would require me to be able to effectively communicate complex technical 
 											concepts to non-technical stakeholders and to be able to tailor my solutions to meet the 
