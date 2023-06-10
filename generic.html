@@ -75,15 +75,16 @@
 											cursor: pointer;
 											background-color:  #f9f9f9;
 											position: relative;
-											font-family: "Merriweather", Georgia, serif;
+											font-family: inherit;
 											text-indent: 3px;
+											font-size: small;
 										}
 										
 										.aboutme_h3::before {
 											content: "\25B2";
-											font-size: 10px;
+											font-size: 8px;
 											position: absolute;
-											margin-top: 4px;
+											margin-top: 0.15%;
 											margin-left: 3px;
 											top: 15 px;
 											left: 0.29%;
@@ -97,14 +98,26 @@
 									</style>
 									<script>
 										function showAnswer(id) {
-											// hide all answers
-											var answers = document.getElementsByClassName("answer");
-											for (var i = 0; i < answers.length; i++) {
-												answers[i].style.display = "none";
-											}
+
+											
+
 											// show answer for clicked question
 											var answer = document.getElementById(id);
-											answer.style.display = "block";
+
+											if (answer.style.display=="block"){
+												answer.style.display="none";
+											}
+											else{
+											answer.style.display = "block";}
+											
+											var answers = document.getElementsByClassName("answer");
+											for (var i = 0; i < answers.length; i++) {
+												if (answers[i]!=answer){
+													answers[i].style.display = "none";
+												}
+											}
+											
+
 										}
 									</script>
 								</head>
